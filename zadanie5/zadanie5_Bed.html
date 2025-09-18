@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Bednarek 3G1 - zadanie5</title>
+    <script type="text/javascript">
+        function WinOpen_Obraz1() {
+            window.open("Obraz1.html", "okienko_z1", "toolbar=no,directories=no,menubar=no,height=400,width=200,top=500,left=500");
+        }
+        function WinOpen_Obraz2() {
+            window.open("Obraz2.html", "okienko_z2", "toolbar=no,directories=no,menubar=no,height=400,width=200,top=500,left=720");
+        }
+        function WinOpen_Obraz3() {
+            window.open("Obraz3.html", "okienko_z3", "toolbar=no,directories=no,menubar=no,height=400,width=200,top=500,left=940");
+        }
+        function WinOpen_Obraz4() {
+            window.open("Obraz4.html", "okienko_z4", "toolbar=no,directories=no,menubar=no,height=400,width=200,top=500,left=1160");
+        }
+        function okno_zamknij() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+    <h1 style="font-size:2cm;color:red;">
+        wykonał: Wojciech Bednarek mój numer w dzienniku 1, czyli mam układ [(1) mod 4=1] układ 1
+    </h1>
+    <form>
+        <input type="button" value="OBRAZ1" onclick="WinOpen_Obraz1()">
+        <input type="button" value="OBRAZ2" onclick="WinOpen_Obraz2()">
+        <input type="button" value="OBRAZ3" onclick="WinOpen_Obraz3()">
+        <input type="button" value="OBRAZ4" onclick="WinOpen_Obraz4()">
+        <input type="button" value="Zamknij okno" onclick="okno_zamknij()">
+    </form>
+</body>
+</html>
