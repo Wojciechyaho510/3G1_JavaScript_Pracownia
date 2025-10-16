@@ -1,0 +1,39 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+        <html> 
+         <body> 
+          <div style="color:green;font-size:80px;"> 
+            <script language="JavaScript"> 
+            // Wojciech Bednarek  3G1  26.09.2025 
+            // Zadanie 12  
+
+              var D1_bil = prompt("Podaj pierwszy dzień (D1):", ""); 
+              var G1_bil = prompt("Podaj pierwszą godzinę (G1):", ""); 
+              var D2_bil = prompt("Podaj drugi dzień (D2):", ""); 
+              var G2_bil = prompt("Podaj drugą godzinę (G2):", ""); 
+
+              var D1 = parseFloat(D1_bil); 
+              var G1 = parseFloat(G1_bil);
+              var D2 = parseFloat(D2_bil); 
+              var G2 = parseFloat(G2_bil); 
+
+              var dzien_roznica = D1 - D2; 
+              var godzina_roznica = G1 - G2;
+
+              var sekund = (dzien_roznica * 24 * 60 * 60) + (godzina_roznica * 60 * 60); 
+
+              document.write("Ilość sekund między dniami " + D1 + " i " + D2 + " oraz godzinami " + G1 + " i " + G2 + " = " + sekund + "<br>"); 
+
+              function okno_zamknij() { 
+                  window.close(); 
+              } 
+            </script> 
+          </div> 
+          <input type="button" value="Zamknij okno" onclick="okno_zamknij()" /> 
+        </body> 
+       </html> 
+      </textarea> 
+    </body> 
+</html>
+
