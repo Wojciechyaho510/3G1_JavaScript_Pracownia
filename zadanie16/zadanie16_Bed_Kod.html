@@ -1,0 +1,34 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<html>
+   <body>
+      <div style="color:blue;font-size:30px;">
+         <script language="JavaScript">
+            // Wojciech Bednarek 3G1 10.10.2025
+            // Zadanie 16
+
+            var A = parseInt(prompt("Podaj pierwszą liczbę A:"));
+            var B = parseInt(prompt("Podaj drugą liczbę B:"));
+
+            var A3 = Math.pow(A, 3);
+            var B3 = Math.pow(B, 3);
+            var A2B = 3 * Math.pow(A, 2) * B;
+            var AB2 = 3 * A * Math.pow(B, 2);
+
+            var result = A3 + A2B + AB2 + B3;
+
+            document.write("Dla liczb A = " + A + " i B = " + B + " obliczamy: <br>");
+            document.write("(A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3 <br>");
+            document.write(A + "^3 = " + A3 + "<br>");
+            document.write("3 * " + A + "^2 * " + B + " = " + A2B + "<br>");
+            document.write("3 * " + A + " * " + B + "^2 = " + AB2 + "<br>");
+            document.write(B + "^3 = " + B3 + "<br>");
+            document.write("Suma: " + A3 + " + " + A2B + " + " + AB2 + " + " + B3 + " = " + result + "<br>");
+         </script>
+      </div>
+   </body>
+</html>
+      </textarea> 
+    </body> 
+</html>
