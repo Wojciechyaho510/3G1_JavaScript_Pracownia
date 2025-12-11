@@ -1,0 +1,51 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Użycie funkcji – Zadanie 18</title>
+</head>
+<body>
+<div style="color:navy; font-size:40px;">
+
+<script>
+
+var a = parseFloat(prompt("Podaj a:", ""));
+var b = parseFloat(prompt("Podaj b:", ""));
+
+function suma_trzy_pierwsze_liter_nazwisko(a, b) {
+    return a + b;
+}
+
+function odejmowanie_Bed(a, b) {
+    return a - b;
+}
+
+function mnozenie_Bed(a, b) {
+    return a * b;
+}
+
+function od_kwadratu_Bed(a, b) {
+    return "a^2 = " + (a*a) + " , b^2 = " + (b*b);
+}
+
+function reszta_z_dzielenia_a_przez_b_Bed(a, b) {
+    return a % b;
+}
+
+document.write("Suma = " + suma_trzy_pierwsze_liter_nazwisko(a,b) + "<br>");
+document.write("Odejmowanie = " + odejmowanie_Bed(a,b) + "<br>");
+document.write("Mnożenie = " + mnozenie_Bed(a,b) + "<br>");
+document.write("Kwadraty: " + od_kwadratu_Bed(a,b) + "<br>");
+document.write("Reszta z dzielenia a przez b = " + reszta_z_dzielenia_a_przez_b_Bed(a,b) + "<br>");
+
+</script>
+
+</div>
+</body>
+</html>
+      </textarea> 
+    </body> 
+</html>

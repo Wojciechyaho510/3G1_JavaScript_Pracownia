@@ -1,0 +1,60 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+ </head> 
+            // Wojciech Bednarek 3G1 10.11.2025
+            // Zadanie 20
+<body> 
+ <script language="JavaScript"> 
+  function AB_Bed(){ 
+    var xa_Deb= parseFloat(document.getElementById('xa_Deb').value);
+    var ya_Deb= parseFloat(document.getElementById('ya_Deb').value);
+    var xb_Deb= parseFloat(document.getElementById('xb_Deb').value);
+    var yb_Deb= parseFloat(document.getElementById('yb_Deb').value);
+    var dlugosc;
+    dlugosc=Math.sqrt(Math.pow(xa_Deb-xb_Deb,2) + Math.pow(ya_Deb-yb_Deb,2));
+    document.getElementById("dlugosc").innerHTML="Dlugosc tego boku "+ dlugosc.toFixed(2);  
+  } 
+
+function AC_Bed(){ 
+    var xa_Deb= parseFloat(document.getElementById('xa_Deb').value);
+    var ya_Deb= parseFloat(document.getElementById('ya_Deb').value);
+    var xb_Deb= parseFloat(document.getElementById('xc_Deb').value);
+    var yb_Deb= parseFloat(document.getElementById('yc_Deb').value);
+    var dlugosc;
+    dlugosc=Math.sqrt(Math.pow(xa_Deb-xb_Deb,2) + Math.pow(ya_Deb-yb_Deb,2));
+    document.getElementById("dlugosc").innerHTML="Dlugosc tego boku "+ dlugosc.toFixed(2);  
+  }
+  
+  function BC_Bed(){ 
+    var xa_Bed= parseFloat(document.getElementById('xb_Deb').value);
+    var ya_Bed= parseFloat(document.getElementById('yb_Deb').value);
+    var xb_Bed= parseFloat(document.getElementById('xc_Deb').value);
+    var yb_Bed= parseFloat(document.getElementById('yc_Deb').value);
+    var dlugosc;
+    dlugosc=Math.sqrt(Math.pow(xa_Deb-xb_Deb,2) + Math.pow(ya_Deb-yb_Deb,2));
+    document.getElementById("dlugosc").innerHTML="Dlugosc tego boku "+ dlugosc.toFixed(2);  
+  }
+ </script> 
+  <h1>Wszystko o Trójkącie</h1><br><br> 
+  Podaj współżędne Xa: <input type="text" id="xa_Bed" value="podaj wartość"><br>
+  Podaj współżędne Ya: <input type="text" id="ya_Bed" value="podaj wartość"><br><br>
+
+  Podaj współżędne Xb: <input type="text" id="xb_Bed" value="podaj wartość"><br>
+  Podaj współżędne Yb: <input type="text" id="yb_Bed" value="podaj wartość"><br><br>
+
+  Podaj współżędne Xc: <input type="text" id="xc_Bed" value="podaj wartość"><br>
+  Podaj współżędne Yc: <input type="text" id="yc_Bed" value="podaj wartość"><br><br>
+
+  <input type="button" name="AB" id="AB" value="Dlugosc AB" Onclick="AB_Bed()"><br><br> 
+  <input type="button" name="AB" id="AB" value="Dlugosc AC" Onclick="AC_Bed()"><br><br>
+  <input type="button" name="AB" id="AB" value="Dlugosc AC" Onclick="BC_Bed()"><br><br>
+  <div  style="color:red;font-size:50px;" id="dlugosc"></div> 
+</body> 
+</html> 
+      </textarea> 
+    </body> 
+</html>

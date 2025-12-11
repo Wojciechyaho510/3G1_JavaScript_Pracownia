@@ -1,0 +1,46 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 19 – Wszystko o kwadracie</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function Pole_Bed() {
+    var a_Bed = parseFloat(document.getElementById('dlugosc').value);
+    var b_Bed = a_Bed * a_Bed;
+
+    document.getElementById("nazwa").innerHTML =
+        "Pole kwadratu = " + b_Bed.toFixed(2) + " cm^2";
+}
+
+function Obwod_Bed() {
+    var a_Bed = parseFloat(document.getElementById('dlugosc').value);
+    var b_Bed = 4 * a_Bed;
+
+    document.getElementById("nazwa").innerHTML =
+        "Obwód kwadratu = " + b_Bed.toFixed(2) + " cm";
+}
+
+</script>
+
+<h1>Wszystko o KWADRACIE</h1><br><br>
+
+Podaj długość boku:
+<input type="text" id="dlugosc" value="5"> cm<br><br><br>
+
+<input type="button" value="Oblicz pole" onclick="Pole_Bed()"><br><br>
+<input type="button" value="Oblicz obwód" onclick="Obwod_Bed()"><br><br>
+
+<div id="nazwa" style="color:red; font-size:50px;"></div>
+
+</body>
+</html>
+      </textarea> 
+    </body> 
+</html>

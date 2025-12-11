@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 26 – trapez równoramienny</title>
+
+<script>
+
+function Pow_kowalski(a, b, h) {
+    return ((a + b) / 2) * h;
+}
+
+function Obw_kowalski(a, b, h) {
+
+    var roznica = Math.abs(a - b);
+
+    var ramie = Math.sqrt( Math.pow(roznica/2, 2) + Math.pow(h, 2) );
+
+    return a + b + 2 * ramie;
+}
+
+function licz() {
+
+    var a = parseFloat(document.getElementById("g").value);
+    var b = parseFloat(document.getElementById("d").value);
+    var h = parseFloat(document.getElementById("h").value);
+
+    var pole = Pow_kowalski(a, b, h);
+    var obw  = Obw_kowalski(a, b, h);
+
+    document.write("<h2>Wyniki obliczeń trapezu równoramiennego:</h2>");
+    document.write("<b>Podstawa górna: </b>" + a + "<br>");
+    document.write("<b>Podstawa dolna: </b>" + b + "<br>");
+    document.write("<b>Wysokość: </b>" + h + "<br><br>");
+
+    document.write("<b>Pole trapezu: </b>" + pole.toFixed(2) + "<br>");
+    document.write("<b>Obwód trapezu: </b>" + obw.toFixed(2) + "<br><br>");
+
+    document.write("<button onclick='history.back()'>Powrót</button>");
+}
+
+</script>
+
+</head>
+<body style="font-size:22px;">
+
+<h2>Obliczanie pola i obwodu trapezu równoramiennego</h2>
+
+<form>
+    Podstawa górna (a): <input id="g" type="number" step="0.01"><br><br>
+    Podstawa dolna (b): <input id="d" type="number" step="0.01"><br><br>
+    Wysokość (h): <input id="h" type="number" step="0.01"><br><br>
+
+    <input type="button" value="Oblicz" onclick="licz()">
+</form>
+
+</body>
+</html>
+

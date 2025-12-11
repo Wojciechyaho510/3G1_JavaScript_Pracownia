@@ -1,0 +1,51 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 23 – Drabina</title>
+</head>
+<body style="font-size:22px;">
+
+<script>
+
+function drabina_Bed(D, X) {
+    return Math.sqrt(D*D + X*X);
+}
+
+function kat_Bed(D, X) {
+    var radiany = Math.atan(D / X);
+    var stopnie = radiany * (180 / Math.PI);
+    return stopnie;
+}
+
+function oblicz_Bed() {
+    var D = parseFloat(document.getElementById("D_bed").value);
+    var X = parseFloat(document.getElementById("X_bed").value);
+
+    var l = drabina_Bed(D, X);
+    var alfa = kat_Bed(D, X);
+
+    document.getElementById("wynik_drabina").value = l.toFixed(2);
+    document.getElementById("wynik_alfa").value = alfa.toFixed(2);
+}
+
+</script>
+
+<h2>Obliczanie odległości drabiny i kąta</h2>
+
+Podaj D = <input type="text" id="D_bed" value="3">  
+Podaj X = <input type="text" id="X_bed" value="4"><br><br>
+
+<input type="button" value="oblicz" onclick="oblicz_Bed()"><br><br>
+
+Drabina = <input type="text" id="wynik_drabina" size="6">  
+Alfa = <input type="text" id="wynik_alfa" size="6">
+
+</body>
+</html>
+      </textarea> 
+    </body> 
+</html>

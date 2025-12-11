@@ -1,0 +1,67 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 27 – Samolot Artura i Dawida</title>
+
+<script>
+
+function wysokosc_kowalski(s, kat) {
+    let katRad = kat * Math.PI / 180;
+    return s * Math.sin(katRad);
+}
+
+function kat_kowalski(s, odl) {
+    let katRad = Math.asin(odl / s);
+    return katRad * 180 / Math.PI;
+}
+
+function oblicz() {
+
+    let odl_kow  = parseFloat(document.getElementById("odl").value);
+    let s_kow    = parseFloat(document.getElementById("s").value);
+    let kat_kow  = parseFloat(document.getElementById("kat").value);
+
+    let h_kow    = wysokosc_kowalski(s_kow, kat_kow);
+    let kat2     = kat_kowalski(s_kow, odl_kow);
+
+    document.getElementById("wysokosc").value = h_kow.toFixed(2);
+    document.getElementById("kat_obl").value  = kat2.toFixed(2);
+}
+
+</script>
+</head>
+
+<body style="font-size:22px;">
+
+<h2>Zadanie 27 – obliczenia dotyczące startu samolotu</h2>
+
+<form>
+
+    Odległość Artur–Dawid:  
+    <input id="odl" type="number" step="0.01"><br><br>
+
+    Droga samolotu s_kow:  
+    <input id="s" type="number" step="0.01"><br><br>
+
+    Kąt startu samolotu kat_kow (podany):  
+    <input id="kat" type="number" step="0.01"><br><br>
+
+    <input type="button" value="Oblicz" onclick="oblicz()"><br><br><br>
+
+    Wysokość h_kow:  
+    <input id="wysokosc" type="text" readonly><br><br>
+
+    Obliczony kąt startu:  
+    <input id="kat_obl" type="text" readonly><br><br>
+
+</form>
+
+</body>
+</html>
+      </textarea> 
+    </body> 
+</html>

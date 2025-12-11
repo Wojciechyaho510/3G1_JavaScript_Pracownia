@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 25 – Rozpad pierwiastka</title>
+</head>
+<body style="font-size:22px;">
+
+<script>
+
+function oblicz_Bed() {
+
+    var N0 = parseFloat(prompt("Podaj N0 (ilość początkowa atomów) =", "1"));
+    var t  = parseFloat(prompt("Podaj czas t [lata] =", "1"));
+    var T12 = parseFloat(prompt("Podaj czas połowicznego zaniku T1/2 [lata] =", "5700"));
+
+    var lambda = Math.log(2) / T12;
+
+    var N = N0 * Math.exp(-lambda * t);
+
+    var lambdaF = lambda.toFixed(7);
+    var NF = N.toFixed(6);
+
+    var wynik = "";
+
+    wynik += "<b style='font-size:30px; color:blue;'>N0 = " + N0 + " [sztuk]</b><br>";
+    wynik += "<b style='font-size:30px; color:blue;'>t = " + t + " [lat]</b><br>";
+    wynik += "<b style='font-size:30px; color:blue;'>T1/2 = " + T12 + " [lat]</b><br><br>";
+
+    wynik += "<b style='font-size:30px; color:blue;'>Lambda = " + lambdaF + " [1/rok]</b><br><br>";
+
+    wynik += "<b style='font-size:40px; color:blue;'>N = " + NF + " [sztuk]</b><br>";
+
+    document.getElementById("wyniki").innerHTML = wynik;
+}
+
+</script>
+
+<h2>Obliczanie ilości atomów po czasie t</h2>
+
+<button onclick="oblicz_Bed()" style="font-size:20px;">Oblicz</button>
+
+<br><br>
+
+<div id="wyniki"></div>
+
+</body>
+</html>
+
+
+
+
+
