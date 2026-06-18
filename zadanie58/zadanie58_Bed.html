@@ -1,30 +1,15 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<title>Bednarek Z58_JS</title>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli - Bednarek</title>
+    <script language="JavaScript">
+        for (var i=0; i<=39; i++){
+            w_bed = i*i + i + 41;
+            document.write("w("+i+")="+" " +w_bed+"<br>");
+        }
+    </script>
 </head>
-
 <body>
-
-<script>
-
-for(var i_bed=0;i_bed<=39;i_bed++)
-{
-    var w_bed=i_bed*i_bed+i_bed+41;
-
-    document.write("i="+i_bed);
-    document.write("&nbsp;&nbsp;");
-    document.write("w("+i_bed+")="+w_bed);
-    document.write("<br>");
-
-    if((i_bed+1)%5==0)
-    {
-        confirm("Kliknij OK aby kontynuować");
-    }
-}
-
-</script>
-
 </body>
 </html>
