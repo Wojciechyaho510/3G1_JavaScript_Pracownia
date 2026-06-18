@@ -1,0 +1,50 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Bednarek Z46_JS</title>
+</head>
+
+<body>
+
+<script>
+
+var ile_razy_bed=10;
+var wielkosc_bed=42;
+
+document.write("Ilość wykonania pętli = "
++ile_razy_bed+"<br>");
+
+document.write("Wielkość liter = "
++wielkosc_bed+"px<br><br>");
+
+for(var i_bed=1;i_bed<=ile_razy_bed;i_bed++)
+{
+if(i_bed%2==1)
+{
+document.write(
+"<span style='font-size:"
++wielkosc_bed+
+"px;'>Bednarek</span><br>"
+);
+}
+else
+{
+document.write(
+"<span style='font-size:"
++wielkosc_bed+
+"px;'>Wojciech</span><br>"
+);
+}
+}
+
+</script>
+
+</body>
+</html>
+      </textarea> 
+    </body> 
+</html>

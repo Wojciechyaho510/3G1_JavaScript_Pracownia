@@ -1,0 +1,45 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Bednarek Z48_JS</title>
+</head>
+
+<body>
+
+<div style="color:red;font-size:50px;">
+
+<script>
+
+do
+{
+var liczba1=prompt("Podaj wysokość h=","");
+var h_bed=parseFloat(liczba1);
+}
+while(h_bed<=0);
+
+do
+{
+var liczba2=prompt("Podaj podstawę a=","");
+var a_bed=parseFloat(liczba2);
+}
+while(!(a_bed>0));
+
+var Pole=a_bed*h_bed/2;
+
+document.write("h = "+h_bed+" cm<br>");
+document.write("a = "+a_bed+" cm<br>");
+document.write("Pole = "+Pole.toFixed(2)+" cm²");
+
+</script>
+
+</div>
+
+</body>
+</html>
+      </textarea> 
+    </body> 
+</html>

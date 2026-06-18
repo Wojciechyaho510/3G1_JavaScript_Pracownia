@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Bednarek Z55_JS</title>
+</head>
+
+<body>
+
+<script>
+
+var a_bed = parseInt(prompt("Podaj wysokość a",""));
+var b_bed = parseInt(prompt("Podaj szerokość b",""));
+
+for(var i_bed=1;i_bed<=b_bed;i_bed++)
+{
+    document.write("*");
+}
+document.write("<br>");
+
+var wiersz_bed="*";
+
+for(var i_bed=1;i_bed<=(b_bed-2);i_bed++)
+{
+    wiersz_bed=wiersz_bed+"&nbsp;&nbsp;";
+}
+
+wiersz_bed=wiersz_bed+"*";
+
+for(var i_bed=1;i_bed<=(a_bed-2);i_bed++)
+{
+    document.write(wiersz_bed+"<br>");
+}
+
+for(var i_bed=1;i_bed<=b_bed;i_bed++)
+{
+    document.write("*");
+}
+
+</script>
+
+</body>
+</html>

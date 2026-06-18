@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Bednarek Z51_JS</title>
+</head>
+
+<body>
+
+<div style="color:red;font-size:40px;">
+
+<script>
+
+var n_bed=parseInt(prompt("Podaj n=",""));
+
+var silnia_bed=1;
+
+if(n_bed==0)
+{
+silnia_bed=1;
+}
+else
+{
+for(var i_bed=1;i_bed<=n_bed;i_bed++)
+{
+silnia_bed=silnia_bed*i_bed;
+}
+}
+
+document.write(n_bed+"! = "+silnia_bed);
+
+</script>
+
+</div>
+
+</body>
+</html>

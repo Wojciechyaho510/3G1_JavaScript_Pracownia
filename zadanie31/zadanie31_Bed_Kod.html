@@ -1,0 +1,59 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 31 - Wojciech Bednarek</title>
+<script type="text/javascript">
+
+var samochod = {
+    kolor: "czarny",
+    marka: "BMW",
+    rocznik: 2022,
+
+    samochod_wyswietl_Bednarek: function()
+    {
+        document.write("Kolor: " + this.kolor + "<br>");
+        document.write("Marka: " + this.marka + "<br>");
+        document.write("Rocznik: " + this.rocznik + "<br>");
+    }
+};
+
+samochod.przebieg = 50000;
+
+samochod.samochod_pokaz_Bednarek = function()
+{
+    alert("Przebieg: " + this.przebieg + " km");
+};
+
+</script>
+</head>
+
+<body>
+<h2>Zadanie 31</h2>
+
+<script>
+samochod.samochod_wyswietl_Bednarek();
+samochod.samochod_pokaz_Bednarek();
+</script>
+
+<hr>
+
+Obiekt: Samochod<br>
+Pola:<br>
+- kolor<br>
+- marka<br>
+- rocznik<br>
+- przebieg (dodane poza obiektem)<br><br>
+
+Metody:<br>
+- samochod_wyswietl_Bednarek()<br>
+- samochod_pokaz_Bednarek()<br>
+
+</body>
+</html>
+      </textarea> 
+    </body> 
+</html>

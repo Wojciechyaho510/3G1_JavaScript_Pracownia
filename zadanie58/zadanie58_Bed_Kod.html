@@ -1,0 +1,36 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Bednarek Z58_JS</title>
+</head>
+
+<body>
+
+<script>
+
+for(var i_bed=0;i_bed<=39;i_bed++)
+{
+    var w_bed=i_bed*i_bed+i_bed+41;
+
+    document.write("i="+i_bed);
+    document.write("&nbsp;&nbsp;");
+    document.write("w("+i_bed+")="+w_bed);
+    document.write("<br>");
+
+    if((i_bed+1)%5==0)
+    {
+        confirm("Kliknij OK aby kontynuować");
+    }
+}
+
+</script>
+
+</body>
+</html>
+      </textarea> 
+    </body> 
+</html>

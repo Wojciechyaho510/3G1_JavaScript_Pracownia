@@ -1,0 +1,38 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Bednarek Z59_JS</title>
+</head>
+
+<body>
+
+<script>
+
+for(var i_bed=1;i_bed<=16;i_bed++)
+{
+    document.write("I="+i_bed+"&nbsp;&nbsp;");
+
+    var pierw_2_bed=Math.sqrt(i_bed);
+    var pierw_4_bed=Math.sqrt(pierw_2_bed);
+
+    document.write("pierw_2("+i_bed+")="+pierw_2_bed.toFixed(2)+"&nbsp;&nbsp;");
+    document.write("pierw_4("+i_bed+")="+pierw_4_bed.toFixed(2));
+    document.write("<br>");
+
+    if(i_bed%3==0)
+    {
+        confirm("Kliknij OK aby kontynuować");
+    }
+}
+
+</script>
+
+</body>
+</html>
+      </textarea> 
+    </body> 
+</html>

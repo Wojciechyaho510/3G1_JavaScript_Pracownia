@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Bednarek Z40_JS</title>
+</head>
+
+<body>
+
+<div style="color:red;font-size:50px;">
+
+<script>
+
+var x = prompt("Podaj argument x=","");
+var x_bed = parseFloat(x);
+
+document.write("Wykonał Wojciech Bednarek<br>");
+document.write("Czytany argument x = " + x_bed + "<br>");
+
+function f_bed(x_bed)
+{
+    if(x_bed > 1)
+    {
+        return 2 * x_bed + 4;
+    }
+
+    if(x_bed >= -2 && x_bed <= 1)
+    {
+        return x_bed * x_bed;
+    }
+
+    if(x_bed < -2)
+    {
+        return 4;
+    }
+}
+
+document.write("f(x) = " + f_bed(x_bed).toFixed(2));
+
+</script>
+
+</div>
+
+</body>
+</html>
+
+<!-- Bednarek Z40_JS -->

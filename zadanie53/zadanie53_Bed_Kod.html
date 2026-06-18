@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Bednarek Z53_JS</title>
+
+    <script language="JavaScript">
+
+        var a_bed = parseInt(prompt("ile razy powtórzyć=",""));
+        var inicjaly_bed = prompt("podaj swoje inicjały=","WB");
+
+        document.write("<p style='color:red;font-size:2cm;'>Wojciech Bednarek</p>");
+        document.write("<p style='color:blue;font-size:5mm;'>Przykład użycia pętli</p>");
+
+        for(var i_bed=1; i_bed<=a_bed; i_bed++)
+        {
+            for(var k_bed=1; k_bed<=i_bed; k_bed++)
+            {
+                document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+            }
+
+            document.write(i_bed+"_"+inicjaly_bed+"_"+i_bed+"<br>");
+        }
+
+    </script>
+
+</head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Bednarek Z41_JS</title>
+</head>
+
+<body>
+
+<h1>Proste działania</h1>
+
+<p>Wojciech Bednarek, klasa 3</p>
+
+<label for="a">Podaj pierwszą liczbę:</label>
+<input type="number" id="a">
+
+<br><br>
+
+<label for="b">Podaj drugą liczbę:</label>
+<input type="number" id="b">
+
+<br><br>
+
+<input type="button" value="DODAWANIE" onclick="suma_bed()">
+<input type="button" value="ODEJMOWANIE" onclick="roznica_bed()">
+<input type="button" value="MNOŻENIE" onclick="iloczyn_bed()">
+<input type="button" value="DZIELENIE" onclick="iloraz_bed()">
+<input type="button" value="TEORIA-BEDNAREK" onclick="teoria_bed()">
+
+<div id="wynik" style="margin-top:20px;"></div>
+
+<script>
+
+function suma_bed()
+{
+    var a=document.getElementById("a").value;
+    var b=document.getElementById("b").value;
+
+    if(a=="" || b=="")
+    {
+        document.getElementById("wynik").innerHTML="Proszę uzupełnić obie liczby.";
+    }
+    else
+    {
+        var wynik=parseFloat(a)+parseFloat(b);
+        document.getElementById("wynik").innerHTML=
+        "Wynik działania wynosi: "+wynik.toFixed(2);
+    }
+}
+
+function roznica_bed()
+{
+    var a=document.getElementById("a").value;
+    var b=document.getElementById("b").value;
+
+    if(a=="" || b=="")
+    {
+        document.getElementById("wynik").innerHTML="Proszę uzupełnić obie liczby.";
+    }
+    else
+    {
+        var wynik=parseFloat(a)-parseFloat(b);
+        document.getElementById("wynik").innerHTML=
+        "Wynik działania wynosi: "+wynik.toFixed(2);
+    }
+}
+
+function iloczyn_bed()
+{
+    var a=document.getElementById("a").value;
+    var b=document.getElementById("b").value;
+
+    if(a=="" || b=="")
+    {
+        document.getElementById("wynik").innerHTML="Proszę uzupełnić obie liczby.";
+    }
+    else
+    {
+        var wynik=parseFloat(a)*parseFloat(b);
+        document.getElementById("wynik").innerHTML=
+        "Wynik działania wynosi: "+wynik.toFixed(2);
+    }
+}
+
+function iloraz_bed()
+{
+    var a=document.getElementById("a").value;
+    var b=document.getElementById("b").value;
+
+    if(a=="" || b=="")
+    {
+        document.getElementById("wynik").innerHTML="Proszę uzupełnić obie liczby.";
+    }
+    else if(parseFloat(b)==0)
+    {
+        document.getElementById("wynik").innerHTML="Nie wolno dzielić przez zero.";
+    }
+    else
+    {
+        var wynik=parseFloat(a)/parseFloat(b);
+        document.getElementById("wynik").innerHTML=
+        "Wynik działania wynosi: "+wynik.toFixed(2);
+    }
+}
+
+function teoria_bed()
+{
+document.getElementById("wynik").innerHTML=
+"<b>1.</b> label + input tworzą opis i pole formularza.<br>"+
+"<b>2.</b> input type='button' tworzy przycisk uruchamiający funkcję.<br>"+
+"<b>3.</b> document.getElementById() pobiera wartość z pola formularza.<br>"+
+"<b>4.</b> if(a=='' || b=='') sprawdza czy pola są puste.<br>"+
+"<b>5.</b> innerHTML wyświetla wynik w elemencie strony.";
+}
+
+</script>
+
+</body>
+</html>
+
+<!-- Bednarek Z41_JS -->

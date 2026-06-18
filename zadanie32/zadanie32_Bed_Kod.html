@@ -1,0 +1,69 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 32 - Wojciech Bednarek</title>
+
+<script type="text/javascript">
+
+function Samochod(kolor_s, marka_s, rocznik_s, paliwo_s)
+{
+    this.kolor = kolor_s;
+    this.marka = marka_s;
+    this.rocznik = rocznik_s;
+    this.paliwo = paliwo_s;
+}
+
+Samochod.prototype.samochod_wyswietl_Bednarek = function()
+{
+    document.write(
+        "Kolor: " + this.kolor +
+        ", Marka: " + this.marka +
+        ", Rocznik: " + this.rocznik +
+        ", Paliwo: " + this.paliwo +
+        "<br>"
+    );
+};
+
+var auto1 = new Samochod("czarny", "BMW", 2022, "benzyna");
+var auto2 = new Samochod("biały", "Audi", 2021, "diesel");
+var auto3 = new Samochod("czerwony", "Toyota", 2023, "hybryda");
+
+auto1.przebieg = 50000;
+auto2.przebieg = 35000;
+auto3.przebieg = 12000;
+
+Samochod.prototype.samochod_pokaz_Bednarek = function()
+{
+    alert("Przebieg: " + this.przebieg + " km");
+};
+
+</script>
+</head>
+
+<body>
+
+<h2>Zadanie 32</h2>
+
+<script>
+
+document.write("<b>Dane obiektów:</b><br><br>");
+
+auto1.samochod_wyswietl_Bednarek();
+auto2.samochod_wyswietl_Bednarek();
+auto3.samochod_wyswietl_Bednarek();
+
+auto1.samochod_pokaz_Bednarek();
+auto2.samochod_pokaz_Bednarek();
+auto3.samochod_pokaz_Bednarek();
+
+</script>
+
+</body>
+</html>
+      </textarea> 
+    </body> 
+</html>

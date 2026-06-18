@@ -1,0 +1,44 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Bednarek Z39_JS</title>
+</head>
+
+<body>
+
+<h2 style="color:green;">MENU</h2>
+
+<p style="color:red;">1 - CZERWONY</p>
+<p style="color:blue;">2 - NIEBIESKI</p>
+
+<input type="button" value="Sprawdź" onclick="fun_bed()">
+
+<script>
+
+function fun_bed()
+{
+    var x_bed = prompt("Podaj kolor lub numer","");
+
+    if(x_bed == 1 || x_bed.toLowerCase() == "czerwony")
+    {
+        document.write('<font color="red" size="7">Wczytałeś kolor czerwony</font>');
+    }
+    else if(x_bed == 2 || x_bed.toLowerCase() == "niebieski")
+    {
+        document.write('<font color="blue" size="1">Wczytałeś kolor niebieski</font>');
+    }
+}
+
+</script>
+
+</body>
+</html>
+
+<!-- Bednarek Z39_JS -->
+      </textarea> 
+    </body> 
+</html>
